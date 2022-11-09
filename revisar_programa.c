@@ -1,13 +1,10 @@
-/***********************************************************
-* You can use all the programs on  www.c-program-example.com
-* for personal and learning purposes. For permissions to use the
-* programs for commercial purposes,
-* contact info@c-program-example.com
-* To find more C programs, do visit www.c-program-example.com
-* and browse!
-* 
-*                      Happy Coding
-***********************************************************/
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
 
 #include <stdio.h>
 /* Propram to perform definite integration of a given function between
@@ -18,9 +15,8 @@
 #define N 1000
 
 void main(void) {
- float i, a, b, sum = 0;
- printf(
-   "nThis program will integrate a function between two boundary limits.");
+ float i, a, b, y, x ,  sum = 0;
+ printf("nThis program will integrate a function between two boundary limits.");
  printf("nnEnter the first boundary limit:");
  scanf("%f", &a);
  printf("nEnter the second boundary limit:");
@@ -38,6 +34,6 @@ void main(void) {
  }
 
  printf("nnValue of integration is:%.3f", sum);
- getch();
+ //getch();
  return;
 }
