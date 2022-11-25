@@ -1,39 +1,23 @@
-/******************************************************************************
+#include<stdio.h>
 
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
+void main()
 
-*******************************************************************************/
+{
+float acumxxx, acumx1, acumx2, acumx3, acumx, acumy,acumxx, acumxx1, acumxx2 ,acumxx3 ,acumyy, acumyy1, acumyy2 ,acumyy3,acumy1, acumy2, acumy3;
+int terminos ,i,j, b, c, d, m, p, x, y; //la variable d es la constante
+//printf("\n Favor de intruducir las constantes de la ecuacion (a, b, c, d) y sus exponentes (n, m, p) \n");
+//printf("\n aX^n+bX^m+cX^p+d\n");
+//printf("aX^n+bX^m+cX^p+d");
+printf("\n Proporcione la cantidad de terminos\n");
+scanf("%d",&terminos);
+int a[terminos];
+int n[terminos];
+for (i=0;i<terminos;i++)
+{
+printf("\n Favor de proporcionar la constante del termino %d \n", i+1); // carga de exponentes y constantes
+scanf("%d",&a[i]);
 
-#include <stdio.h>
-/* Propram to perform definite integration of a given function between
- two boundary limits input by user. Feel free to use and modify it, but
- please do not remove this comment.
- source: C for Engineering, http://c4engineering.hypermart.net */
-
-#define N 1000
-
-void main(void) {
- float i, a, b, y, x ,  sum = 0;
- printf("nThis program will integrate a function between two boundary limits.");
- printf("nnEnter the first boundary limit:");
- scanf("%f", &a);
- printf("nEnter the second boundary limit:");
- scanf("%f", &b);
- if (a > b) {
-  i = a;
-  a = b;
-  b = i;
- }
-
- for (i = a; i < b; i += (b - a) / N) {
-  /* Define your function below, and include the suitable header files */
-  y = x * x + 2 * x - 4;
-  sum += y * (b - a) / N;
- }
-
- printf("nnValue of integration is:%.3f", sum);
- //getch();
- return;
+printf("\n Favor de proporcionar el exponente ""n"" \n");
+scanf("%d",&n[i]);
+}
 }
