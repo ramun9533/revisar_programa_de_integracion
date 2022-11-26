@@ -34,13 +34,13 @@ scanf("%f",&x);
 //p=1;
 
 
-acumx1=0;
+acumx1=0; //acomulador suma
 //Este for cin variable i es de los terminos, funciona
 for (i=0;i<=terminos;i++)
 {
     acumx1=acumx1+acumx3;
-    acumx2=1;
-    acumx3=0;
+    acumx2=1; //acomulador multiplicadora
+    acumx3=0; //acomulador suma
     //Este for cin variable  es de los potencia, funciona
     for (j=0;j<n[i]+1;j++) // Al agregar n[i]+1 me eleva la potencia
 {
