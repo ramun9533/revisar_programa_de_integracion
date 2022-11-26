@@ -6,7 +6,9 @@ void main()
 float p, x, y, acumxxx, acumx1, acumx2, acumx3, acumy,acumxx, acumxx1, acumxx2 ,acumxx3 ,acumyy, acumyy1, acumyy2 ,acumyy3,acumy1, acumy2, acumy3;
 int terminos, potencia ,i,j, b, c, d, m; //la variable d es la constante
 printf("\n Favor de intruducir las constantes de la ecuacion (a, b, c, d) y sus exponentes (n, m, p) \n");
-printf("\n aX^n+bX^m+cX^p+d\n");
+printf("\n aX^n+bX^m+cX^p+d \n\n");
+printf("\n [aX^n] + [bX^m] + [cX^p] + [d] \n");
+printf("\n    ↑        ↑        ↑      ↑ \n");
 printf("\n Proporcione la cantidad de terminos\n");
 scanf("%d",&terminos);
 float a[terminos];
@@ -15,17 +17,24 @@ float acumx[terminos];
 //Se asigna valores a acomuladores, constante "a" y la potencia "n"
 for (i=0;i<terminos;i++)
 {
-printf("\n Favor de proporcionar la constante del termino %d \n", i+1); // carga de exponentes y constantes
+printf("\n Favor de proporcionar la constante ""a"" del termino %d \n", i+1); // carga de exponentes y constantes
+printf("→→> [a] X^n");
 scanf("%f",&a[i]);
 
 printf("\n Favor de proporcionar el exponente ""n"" del termino %d \n" , i+1); // Coloco  "i+1" porque si coloco "i" comenzara a aparecer desde "0"
-
+printf("aX^ [n] ←←←");
 scanf("%d",&n[i]); //cargando datos al vector "n" por medio del contador "i"
 printf("hola %f a[i]\n",a[i]);
 }
 
 printf("\n Favor dar los limites de la integral\n");
 printf("\n Favor de proporcionar limite Siperior \n"); // carga de Limites
+printf("a [X] ^n \n");
+printf("   ↑\n");
+printf("   ↑\n");
+printf("   |\n");
+// printf(" ^\n");
+// printf(" ^\n");
 scanf("%f",&x);
 // float a[terminos];
 // float n[terminos];
@@ -52,5 +61,5 @@ acumx3=a[i]*((acumx2+acumx3)/(n[i]+1));
     printf("hola %f\n", acumx3);
     printf("hola %f a[i]\n",a[i]);
     }
-printf("%f", acumx1);
+printf("Resultado de la Integral %f \n\n", acumx1);
 }
