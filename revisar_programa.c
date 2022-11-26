@@ -15,13 +15,13 @@ float acumx[terminos];
 //Se asigna valores a acomuladores, constante "a" y la potencia "n"
 for (i=0;i<terminos;i++)
 {
-// printf("\n Favor de proporcionar la constante del termino %d \n", i+1); // carga de exponentes y constantes
-// scanf("%d",&a[i]);
+printf("\n Favor de proporcionar la constante del termino %d \n", i+1); // carga de exponentes y constantes
+scanf("%f",&a[i]);
 
 printf("\n Favor de proporcionar el exponente ""n"" del termino %d \n" , i+1); // Coloco  "i+1" porque si coloco "i" comenzara a aparecer desde "0"
 
 scanf("%d",&n[i]); //cargando datos al vector "n" por medio del contador "i"
-
+printf("hola %f a[i]\n",a[i]);
 }
 
 printf("\n Favor dar los limites de la integral\n");
@@ -47,8 +47,10 @@ for (i=0;i<=terminos;i++)
     acumx2=acumx2*x; //la variable "p" se esta uasando `para prueba
 
 }
-acumx3=((acumx2+acumx3)/(n[i]+1));
-     printf("hola %f\n", acumx3);
-}
+acumx3=a[i]*((acumx2+acumx3)/(n[i]+1));
+//acumxx1=acumx3*a[i];
+    printf("hola %f\n", acumx3);
+    printf("hola %f a[i]\n",a[i]);
+    }
 printf("%f", acumx1);
 }
