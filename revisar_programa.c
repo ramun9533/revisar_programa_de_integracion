@@ -18,7 +18,7 @@ for (i=0;i<=terminos;i++)
 {
 n[i]=0;
 }
-//Se asigna valores a acomuladores, constante "a" y la potencia "n"
+//Se asigna constante "a" y la potencia "n y maximo y minimo"
 for (i=0;i<terminos;i++)
 {
 printf("\n Favor de proporcionar la constante ""a"" del termino %d \n", i+1); // carga de exponentes y constantes
