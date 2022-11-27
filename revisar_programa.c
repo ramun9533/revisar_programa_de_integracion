@@ -1,7 +1,5 @@
 #include<stdio.h>
-
 void main()
-
 {
 float p, x, y, acumxxx, acumx1, acumx2, acumx3, acumxx, acumxx1, acumxx2 ,acumxx3 ,acumyy, acumyy1, acumyy2 ,acumyy3,acumy1, acumy2, acumy3;
 int terminos, potencia ,i,j, b, c, d, m; //la variable d es la constante
@@ -24,29 +22,25 @@ n[i]=0;
 for (i=0;i<terminos;i++)
 {
 printf("\n Favor de proporcionar la constante ""a"" del termino %d \n", i+1); // carga de exponentes y constantes
-printf("→→> [a] X^n \n");
+printf("\t\t\t→→> [a] X^n \n");
 scanf("%f",&a[i]);
-
 printf("\n Favor de proporcionar el exponente ""n"" del termino %d \n" , i+1); // Coloco  "i+1" porque si coloco "i" comenzara a aparecer desde "0"
-printf("aX^ [n] ←←← \n");
+printf("\t\t\taX^ [n] ←←← \n");
 scanf("%d",&n[i]); //cargando datos al vector "n" por medio del contador "i"
-printf("hola %f a[i]\n",a[i]);
 }
-
 printf("\n Favor dar los limites de la integral\n");
 printf("\n Favor de proporcionar limite Siperior \n"); // carga de Limites
-printf("a [X] ^n \n");
-printf("   ↑\n");
-printf("   ↑\n");
-printf("   |\n");
+printf("\t\t\ta [X] ^n \n");
+printf("\t\t\t   ↑\n");
+printf("\t\t\t   ↑\n");
+printf("\t\t\t   |\n");
 scanf("%f",&x);
 printf("\n Favor de proporcionar limite Inferior  \n");
 scanf("%f",&y);
-printf("a [X] ^n \n");
-printf("   ↑\n");
-printf("   ↑\n");
-printf("   |\n");
-// printf("   %f YYY\n",y);
+printf("\t\t\ta [X] ^n \n");
+printf("\t\t\t   ↑\n");
+printf("\t\t\t   ↑\n");
+printf("\t\t\t   |\n");
 acumx1=0; //acomulador suma limite superior
 acumy1=0; //acomulador suma limite inferior
 //Este for cin variable i es de los terminos, funciona
@@ -63,15 +57,9 @@ for (i=0;i<=terminos;i++)
 {
     acumx2=acumx2*x; //la variable "p" se esta uasando `para prueba
     acumy2=acumy2*y; //la variable "p" se esta uasando `para prueba
-    // printf("hola %f YYYY\n", y);
-
-}
+    }
 acumx3=a[i]*((acumx2+acumx3)/(n[i]+1));
 acumy3=a[i]*((acumy2+acumy3)/(n[i]+1));
-//acumxx1=acumx3*a[i];
-    // printf("hola %f superior\n", acumx3);
-    // printf("hola %f a[i]\n",a[i]);
-    // printf("hola %f inferior\n", acumy3);
     }
 printf("Resultado de la Integral %f superior \n", acumx1);
 printf("Resultado de la Integral %f inferior \n\n", acumy1);
